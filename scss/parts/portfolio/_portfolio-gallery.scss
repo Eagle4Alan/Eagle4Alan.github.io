@@ -1,0 +1,22 @@
+.portfolio-gallery{
+  border-top: $semi-blue solid 1px;
+  border-bottom: 1px #cccccc solid;
+  padding-bottom: 10px;
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  &__item{
+    width: 24.5%;
+    position: relative;
+    margin-top: 0.6%;
+    display: block;
+
+    @media all and(max-width: 980px) {
+      width: 32.9%;
+    }
+    @media all and(max-width: 730px) {
+      width: 49.8%;
+    }
+  }
+}

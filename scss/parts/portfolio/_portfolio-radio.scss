@@ -1,0 +1,85 @@
+.portfolio-radio {
+  width: 70%;
+  display: inline-flex;
+
+  @media all and(max-width: 1000px) {
+    width: 74%;
+  }
+  @media all and(max-width: 940px) {
+    width: 100%;
+  }
+  @media all and(max-width: 740px) {
+    flex-wrap: wrap;
+  }
+
+  &__block {
+    width: 33.3%;
+
+    @media all and(max-width: 740px) {
+      width: 45%;
+      margin-left: 10px;
+    }
+    @media all and(max-width: 530px) {
+      width: 100%;
+    }
+  }
+
+  &__block:first-child {
+
+    @media all and(max-width: 940px) {
+      margin-left: 30px;
+    }
+    @media all and(max-width: 740px) {
+      margin-left: 10px;
+    }
+  }
+
+  &__item {
+    font-weight: 700;
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+
+    & input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+  }
+
+  &__item:hover input ~ .checkmark {
+    background-color: #cccccc;
+  }
+
+  &__item input:checked ~ .checkmark {
+    background-color: white;
+  }
+
+  &__item input:checked ~ .checkmark:after {
+    display: block;
+  }
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 50%;
+
+    &:after {
+      @include pseudo-a;
+      display: none;
+      top: 4px;
+      left: 4px;
+      background-image: url(../img/checkbox.png);
+      height: 13px;
+      width: 13px;
+    }
+  }
+}

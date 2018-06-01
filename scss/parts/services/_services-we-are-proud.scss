@@ -1,0 +1,51 @@
+
+.services-we-are-proud{
+
+
+  @media all and(min-width: 940px) {
+    padding-bottom: 50px;
+
+    &__section{
+      margin-bottom: 0;
+    }
+
+    &__text{
+      width: 35%;
+      border: none;
+    }
+
+    &__title{
+      font-size: 30px;
+    }
+
+    &__button{
+      width: 30%;
+
+      & a:hover{
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+
+    &__item{
+      width: 35%;
+      border-left: 2px #cccccc solid;
+      min-height: 100px;
+
+      & img{
+        width: 80%;
+      }
+    }
+
+    &__hidden{
+      display: none;
+    }
+  }
+
+  &__button{
+
+    @media all and (max-width: 940px) {
+      display: none;
+    }
+  }
+}

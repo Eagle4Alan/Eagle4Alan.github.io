@@ -1,0 +1,44 @@
+.our-story{
+  position: relative;
+  z-index: 1;
+  justify-content: center;
+  font-weight: 600;
+  margin-top: -85px;
+
+  &__section{
+    background: linear-gradient(rgba(184,216,239,0.8),$blured-blue);
+    padding: 10px;
+    position: relative;
+
+    &::after,&::before{
+      @include pseudo-a();
+      top: 0;
+      width: 19px;
+      height: 316px;
+    }
+    &::after{
+      right: -19px;
+      background: url("../img/os_shadow_right.png");
+    }
+    &::before{
+      left: -19px;
+      background: url("../img/os_shadow_left.png");
+    }
+  }
+
+  &__content{
+    border: 1px $white solid;
+    text-align: center;
+    padding: 40px 60px;
+
+    @media all and(max-width: 640px) {
+      padding: 40px 20px;
+    }
+  }
+  &__text{
+    @media all and(max-width: 480px) {
+      font-weight: 500;
+      font-size: 14px;
+    }
+  }
+}

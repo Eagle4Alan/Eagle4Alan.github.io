@@ -1,0 +1,48 @@
+.our-portfolio{
+  background-color: $light-grey;
+  margin-top: 75px;
+  padding-top: 40px;
+
+  @media all and(max-width: 930px) {
+    margin-top: 0;
+  }
+
+  &__section{
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    flex-direction: row;
+    overflow: hidden;
+    border-top: 5px $light-blue solid;
+    border-bottom: 5px $light-blue solid;
+    justify-content: center;
+  }
+  &__item{
+    width: 25%;
+    position: relative;
+
+    @media all and(max-width: 960px) {
+      width: 33.3%;
+    }
+    @media all and(max-width: 720px) {
+      width: 50%;
+    }
+  }
+  &__text{
+    padding: 9px 25px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+    background-color: $light-blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @media all and(max-width: 480px) {
+      padding: 5px 4px;
+      font-size: 12px;
+    }
+
+  }
+}

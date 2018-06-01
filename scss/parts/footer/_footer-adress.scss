@@ -1,0 +1,40 @@
+.footer-adress{
+  font-family: "Open Sans", sans-serif;
+  width: 30%;
+  display: inline-flex;
+  flex-direction: row;
+
+  @media all and(max-width: 780px) {
+    width: auto;
+  }
+  @media all and(max-width: 540px) {
+    width: 100%;
+  }
+
+  &__logo{
+    width: 30%;
+    text-align: center;
+
+  }
+  &__text{
+    width: 70%;
+    font-size: 12px;
+    color: $footer-dark-grey;
+    line-height: 1.2;
+    font-weight: 300;
+    padding: 16px 0;
+
+    @media all and(max-width: 780px) {
+      width: 50%;
+    }
+    @media all and(max-width: 540px) {
+      width: 60%;
+    }
+
+
+    & p:first-child{
+      font-weight: 600;
+      color: $footer-dark-grey;
+    }
+  }
+}

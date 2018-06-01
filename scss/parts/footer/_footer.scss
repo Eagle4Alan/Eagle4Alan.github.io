@@ -1,0 +1,32 @@
+.footer{
+  background-color: $footer-bg-dark;
+
+  & li{
+    list-style: none;
+    position: relative;
+  }
+
+  &__section{
+    display: inline-flex;
+
+    @media all and(max-width: 540px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__phone{
+    width: 100%;
+  }
+  &__phone span{
+    min-width: 65px;
+    display: inline-block;
+  }
+  &__phone a {
+    color: $footer-dark-grey;
+    font-size: 12px;
+    &:hover {
+      color: $light-blue;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,123 @@
+.work-design {
+  border-bottom: 1px #cccccc solid;
+  padding-bottom: 50px;
+
+  @media all and (max-width: 780px) {
+    margin-top: 40px;
+  }
+
+  @media all and (max-width: 420px) {
+    display: none;
+  }
+
+  .work-design-content {
+    display: flex;
+    justify-content: space-around;
+
+    &_start{
+
+      @media all and(min-width: 940px) {
+        justify-content: flex-start;
+      }
+    }
+
+    @media all and(max-width: 940px) {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      flex-direction: column;
+      text-align: center;
+      width: 19%;
+
+      @media all and (max-width: 940px) {
+        width: 33%;
+      }
+
+      @media all and (max-width: 576px) {
+        width: 48%;
+      }
+
+      &:hover {
+        .work-design-content__image::before {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    &__image {
+      position: relative;
+
+      &::before {
+        content: '';
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 168px;
+        height: 170px;
+        background: url(../img/services/design_bg.png) no-repeat center center;
+        display: inline-block;
+        z-index: 0;
+        transition: transform 1s;
+      }
+      &::after {
+        @include pseudo-a;
+        top: 10%;
+        left: 50%;
+        margin-left: -65px;
+        width: 127px;
+        height: 127px;
+        //margin-left: -50px;
+        //margin-top: -50px;
+        z-index: 1;
+        border-radius: 50%;
+        border: white 2px solid;
+      }
+      &_driveways::after {
+        background-image: url(../img/services/interlocking-paving/driveways.png);
+      }
+      &_walkways::after {
+        background-image: url(../img/services/interlocking-paving/walkways.png);
+      }
+      &_patios::after {
+        background-image: url(../img/services/interlocking-paving/patios.png);
+      }
+      &_flagstone::after {
+        background-image: url(../img/services/interlocking-paving/flagstone.png);
+      }
+      &_armour-stone::after {
+        background-image: url(../img/services/interlocking-paving/armour_stone.png);
+      }
+      &_waterfalls::after{
+        background-image: url(../img/services/pools/waterfalls.png);
+      }
+      &_coping::after{
+        background-image: url(../img/services/pools/coping.png);
+      }
+      &_cabanas::after{
+        background-image: url(../img/services/woodworks/cabanas.png);
+      }
+      &_sheds::after{
+        background-image: url(../img/services/woodworks/sheds.png);
+      }
+      &_desks::after{
+        background-image: url(../img/services/woodworks/desks.png);
+      }
+      &_fences::after{
+        background-image: url(../img/services/woodworks/fences.png);
+      }
+
+    }
+
+    &__name {
+      font-family: "Open Sans";
+      font-size: 30px;
+      font-weight: lighter;
+
+      @media all and (max-width: 940px) {
+        font-size: 24px;
+      }
+    }
+  }
+}

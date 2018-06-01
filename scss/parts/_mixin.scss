@@ -1,0 +1,22 @@
+@mixin pseudo-a(){
+  position: absolute;
+  content: '';
+}
+@mixin title($font:36px,$color:#00ff00){
+  font-size: $font;
+  color: $color;
+  line-height: 1;
+  font-weight: 700;
+}
+@mixin toggle-arrow(){
+  position: relative;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 0;
+  border-left: 0.3em solid transparent;
+  border-right: 0.3em solid transparent;
+  border-top: 0.3em solid white;
+  border-bottom: none;
+}

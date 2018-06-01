@@ -1,0 +1,32 @@
+.portfolio {
+  background-color: $semi-blue;
+  margin-top: 1px;
+  margin-bottom: 4px;
+
+  @media all and (max-width: 780px) {
+    margin-top: 65px;
+  }
+  &__section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 16px;
+  }
+
+  &__title {
+    font-size: 50px;
+    color: white;
+    text-transform: uppercase;
+    text-align: left;
+    width: 30%;
+    margin: auto;
+
+    @media all and(max-width: 1000px) {
+      width: 20%;
+    }
+    @media all and(max-width: 940px) {
+      width: 100%;
+    }
+  }
+}
+

@@ -1,0 +1,14 @@
+.element{
+  display: flex;
+}
+
+.element-title{
+  display: inherit;
+  flex-flow: wrap column;
+  margin-right: 20px;
+}
+
+.element-number{
+  display: inherit;
+  flex-flow: wrap column;
+}

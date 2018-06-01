@@ -1,0 +1,84 @@
+.header-secondary{
+  background-image: url(../img/menu_bg.jpg);
+  height: 105px;
+
+  @media all and(max-width: 780px) {
+    display: none;
+  }
+
+  &__section{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 16px;
+  }
+
+  &__logo{
+    width: 20%;
+    text-align: left;
+
+    @media all and (max-width:1082px){
+      width: 15%;
+    }
+  }
+  &__nav{
+    width: 55%;
+    margin: auto;
+    text-align: left;
+
+    @media all and (max-width:1082px){
+      width: 65%;
+    }
+
+    & ul{
+      display: inline-flex;
+      padding-left: 0;
+      margin: 0;
+    }
+    & li{
+      list-style: none;
+      position: relative;
+
+      &>a{
+        text-transform: uppercase;
+        color: $light-blue;
+        text-decoration: none;
+        font-size: 14px;
+        padding: 0 20px;
+
+        @media all and (max-width:920px){
+        font-size: 13px;
+        padding: 0 12px;
+        }
+        &:hover{
+          text-decoration: none;
+          color: $blured-blue;
+        }
+      }
+      &::after{
+        height: 100%;
+        width: 2px;
+        background-color: #508594;
+        position: absolute;
+        content: '';
+        right: 0;
+        top: 0;
+      }
+    }
+  }
+  &__phone{
+    width: 25%;
+    margin: auto;
+
+
+    @media all and (max-width:1082px){
+      width: 20%;
+    }
+
+    & a{
+      @media all and (max-width:1082px){
+        font-size: 24px;
+      }
+    }
+  }
+}

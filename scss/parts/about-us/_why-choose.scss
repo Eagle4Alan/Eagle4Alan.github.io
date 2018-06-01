@@ -1,0 +1,48 @@
+.why-choose{
+  display: inline-flex;
+  flex-wrap: wrap;
+
+  h4 {
+    font-size: 24px;
+    color: $semi-blue;
+    width: 100%;
+    display: block;
+    padding-right: 68%;
+
+    @media all and(max-width: 840px) {
+      text-align: center;
+      padding: 0 30px;
+    }
+
+
+    @media all and(max-width: 640px) {
+      text-align: center;
+      padding: 0 30px;
+    }
+  }
+
+  &__block{
+    width: 50%;
+    margin-top: 10px;
+    padding-right: 10px;
+
+    @media all and(max-width: 640px) {
+      display: none;
+    }
+  }
+
+  &__block-hidden{
+    display: none;
+
+    @media all and(max-width: 640px) {
+      display: block;
+      padding: 0 15px;
+      margin-top: 10px;
+      text-align: center;
+    }
+  }
+
+  &__block:last-child{
+    padding-left: 4%;
+  }
+}

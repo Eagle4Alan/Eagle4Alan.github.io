@@ -1,0 +1,93 @@
+.contact-us-section{
+  display: inherit;
+  flex-wrap: wrap;
+}
+
+.contact-us-info{
+  font-family: "Open Sans", sans-serif;
+  width: 60%;
+  padding-right: 4%;
+
+  &__adress{
+    position: relative;
+    margin-top: 25px;
+  }
+  &__adress::before{
+    @include pseudo-a;
+    top: 0;
+    left: -70px;
+    background-image: url(../img/sprite.png);
+    background-position: 0 -300px;
+    height: 40px;
+    width: 100px;
+  }
+
+  &__tel{
+    margin-top: 25px;
+    position: relative;
+  }
+  &__tel:before{
+    @include pseudo-a;
+    top: 0;
+    left: -70px;
+    background-image: url(../img/sprite.png);
+    background-position: -100px -300px;
+    height: 40px;
+    width: 100px;
+  }
+
+  @media all and(max-width: 1210px) {
+    &__adress{
+      margin-left: 30px;
+    }
+    &__tel{
+      margin-left: 30px;
+    }
+  }
+}
+.contact-us-modal{
+  width: 40%;
+  padding-left: 50px;
+}
+.contact-us-form{
+  display: flex;
+  flex-direction: column;
+
+  &__style{
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid $semi-blue;
+    border-radius: 6px;
+  }
+
+  &__style::-webkit-input-placeholder {
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+
+  &__button{
+    padding: 15px 0;
+    background-color: $yellow-button;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+}
+
+@media all and (max-width: 680px) {
+  .contact-us-info{
+    width: 100%;
+  }
+  .contact-us-modal{
+    width: 310px;
+    margin: auto;
+    padding: 40px 0 0 0;
+  }
+}
+
+.iframe-container{
+  width: 100%;
+  height: 514px;
+}

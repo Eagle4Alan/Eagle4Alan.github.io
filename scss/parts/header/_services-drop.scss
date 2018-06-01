@@ -1,0 +1,22 @@
+.services-drop{
+  position: relative;
+
+  & ul>li:last-child{
+    padding-bottom: 0;
+  }
+
+
+  &:hover .services-drop__wrap{
+    display: block;
+  }
+  &__wrap{
+    display: none;
+    top: 2px;
+    left: -181px;
+    min-width: 10rem;
+
+    & a{
+      font-size: 14px;
+    }
+  }
+}

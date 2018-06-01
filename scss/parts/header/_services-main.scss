@@ -1,0 +1,33 @@
+.services-main{
+  position: relative;
+
+  &:hover .services-menu{
+    display: block;
+  }
+}
+
+.services-menu{
+  position: absolute;
+  display: block !important;
+  width: 250px;
+  background-color: rgba(15%, 18%, 21%, 0.4);
+  border: 1px black solid;
+  padding: 20px 15px;
+  margin: auto;
+
+  &__item{
+    display: block;
+    padding: 5px 0;
+    border-bottom: 1px solid $semi-blue;
+
+    & a{
+      color: white !important;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+    & a:hover{
+      text-decoration: none;
+      color: aliceblue;
+    }
+  }
+}

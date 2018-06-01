@@ -1,0 +1,45 @@
+.button {
+  font-family: $open-sans;
+  padding: 7px 10px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $button-blue;
+  background-color: $light-blue;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 110px;
+  margin-top: auto;
+  cursor: pointer;
+  text-align: center;
+
+  &_footer {
+    max-width: 76%;
+    padding: 12px 0;
+    color: #ffffff;
+    background-color: $footer-button;
+    margin: 0;
+    text-align: center;
+
+    @media all and (max-width: 840px) {
+      font-size: 13px;
+    }
+    @media all and(max-width: 780px) {
+      max-width: 100%;
+    }
+    @media all and(max-width: 540px) {
+      margin: 20px 0;
+    }
+  }
+
+  &_long {
+    max-width: 100%;
+    padding: 12px 55px;
+    color: black;
+  }
+  &_yellow{
+    background-color: $yellow-button;
+    max-width: none;
+    padding: 12px 45px;
+  }
+}

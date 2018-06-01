@@ -1,0 +1,29 @@
+
+body {
+  color: #000000;
+  font-family: $montserrat;
+}
+
+img {
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.active, .active:hover{
+  color: white!important;
+}
+
+.slick-slide img {
+  display: inline-block !important;
+}
+
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.blue-borders{
+  margin: 4px 0;
+  border-top: 1px $semi-blue solid;
+
+}
