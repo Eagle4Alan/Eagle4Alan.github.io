@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectTasksOptions" suppressed-tasks="SCSS;Compass SCSS">
     <TaskOptions isEnabled="true">
-      <option name="arguments" value="compile &quot;D:/Projects/First quest/BBI&quot; $UnixSeparators($FilePath$)$" />
+      <option name="arguments" value="compile &quot;D:/Projects/GitHub/Eagle4Alan.github.io/bbi-website&quot; $UnixSeparators($FilePath$)$" />
       <option name="checkSyntaxErrors" value="true" />
       <option name="description" value="Compiles .scss files into .css files using compass" />
       <option name="exitCodeBehavior" value="ERROR" />
@@ -18,7 +18,7 @@
       <option name="program" value="C:/Ruby24-x64/bin/compass.bat" />
       <option name="scopeName" value="Project Files" />
       <option name="trackOnlyRoot" value="true" />
-      <option name="workingDir" value="D:\Projects\First quest\BBI" />
+      <option name="workingDir" value="$PROJECT_DIR$" />
       <envs />
     </TaskOptions>
   </component>
