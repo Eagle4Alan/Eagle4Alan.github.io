@@ -1,11 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
     //Top changes on scroll
-    window.addEventListener('scroll', function(e) {
+    window.addEventListener('scroll', onScroll);
+
+    document.addEventListener("touchmove", onScroll);
+    function onScroll(){
         document.getElementsByClassName('top-wrapper')[0].classList.add("scroll");
         if(window.scrollY === 0){
             document.getElementsByClassName('top-wrapper')[0].classList.remove("scroll");
         }
-    });
+    };
 
     //Product details change
     var products = document.getElementsByClassName('product__block__item');
@@ -50,3 +53,4 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
